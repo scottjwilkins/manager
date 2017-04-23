@@ -6,7 +6,7 @@ import firebase from 'firebase';
 import ReduxThunk from 'redux-thunk';
 import reducers from './reducers';
 import LoginForm from './components/LoginForm';
-import QR from './components/QR';
+//import QR from './components/QR';
 import { Header } from './components/common';
 
 
@@ -29,7 +29,7 @@ class App extends Component {
       <Provider store={store}>
         <View>
           <Header headerText="QR code generator" />
-          <QR />
+          <LoginForm />
         </View>
       </Provider>
     );

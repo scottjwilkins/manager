@@ -6,7 +6,8 @@ import {
 const INITIAL_STATE = {
   name: '',
   phone: '',
-  shift: ''
+  shift: '',
+  employeeList: []
 };
 
 export default (state = INITIAL_STATE, action) => {

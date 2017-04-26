@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "firebase": "^3.8.0",
+    "lodash": "^4.17.4",
     "react": "^16.0.0-alpha.3",
     "react-native": "0.43.4",
     "react-native-qrcode": "^0.2.3",

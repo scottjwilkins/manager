@@ -7,7 +7,7 @@ import ListItem from './ListItem';
 
 class EmployeeList extends Component {
   componentWillMount() {
-    this.props.employeesFetch();
+    this.props.employeesFetch({ employee: this.props.employee });
 
     this.createDataSource(this.props);
   }
@@ -26,10 +26,9 @@ class EmployeeList extends Component {
     this.dataSource = ds.cloneWithRows(employees);
   }
   renderRow(employee) {
-    return <ListItem employee={employee} />
+    return <ListItem employee={employee} />;
   }
   render() {
-    console.log(this.props);
     return (
       <ListView
         enableEmptySections
